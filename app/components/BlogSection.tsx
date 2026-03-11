@@ -38,17 +38,17 @@ export default function BlogSection({ data }: Props) {
                                 <div className="flex-1">
                                     {/* Meta */}
                                     <div className="flex items-center gap-3 mb-2">
-                                        <time className="text-xs font-mono text-muted">
+                                        <time className="text-sm font-mono text-muted">
                                             {post.date}
                                         </time>
                                         <span className="text-xs text-muted">·</span>
-                                        <span className="text-xs font-mono text-muted">
+                                        <span className="text-sm font-mono text-muted">
                                             {post.readTime}
                                         </span>
                                     </div>
 
                                     {/* Title */}
-                                    <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
+                                    <h3 className="text-xl font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
                                         {post.title}
                                     </h3>
 
@@ -57,7 +57,7 @@ export default function BlogSection({ data }: Props) {
                                         {post.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="px-3 py-1 text-xs font-mono font-medium text-tag-text bg-tag-bg rounded-full border border-border"
+                                                className="px-3 py-1 text-sm font-mono font-medium text-tag-text bg-tag-bg rounded-full border border-border"
                                             >
                                                 {tag}
                                             </span>
@@ -80,7 +80,7 @@ export default function BlogSection({ data }: Props) {
                                     }`}
                             >
                                 <div className="pl-0 border-l-2 border-accent pl-4">
-                                    <p className="text-sm text-foreground leading-relaxed">
+                                    <p className="text-base text-foreground leading-relaxed">
                                         {post.description}
                                     </p>
                                 </div>

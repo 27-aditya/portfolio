@@ -61,8 +61,8 @@ export default function PageContent({ experience, projects, blog }: Props) {
             {/* Body: 60-40 split, each independently scrollable, no visible scrollbars */}
             <div className="flex flex-1 overflow-hidden">
                 {/* Left Column — 60% */}
-                <main className="w-[70%] overflow-y-auto no-scrollbar px-8 lg:px-14 xl:px-20 py-10 lg:py-14">
-                    <div className="max-w-3xl">
+                <main className="w-[65%] overflow-y-auto no-scrollbar pl-8 pr-4 lg:pl-14 lg:pr-6 xl:pl-20 xl:pr-8 py-5 lg:py-7">
+                    <div className="max-w-4xl">
                         {activeTab === "experience" && (
                             <ExperienceSection data={experience} />
                         )}

@@ -52,13 +52,13 @@ export default function ProjectsSection({ data }: Props) {
                                 onClick={() => setExpandedIndex(isExpanded ? null : index)}
                             >
                                 <div className="flex-1">
-                                    <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
+                                    <h3 className="text-xl font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
                                         {project.title}
                                     </h3>
-                                    <p className="text-xs font-mono text-muted mb-3">
+                                    <p className="text-sm font-mono text-muted mb-3">
                                         {project.tech}
                                     </p>
-                                    <p className="text-sm text-muted leading-relaxed max-w-lg">
+                                    <p className="text-base text-muted leading-relaxed">
                                         {project.description}
                                     </p>
                                 </div>

@@ -22,11 +22,11 @@ export default function ExperienceSection({ data }: Props) {
                 {data.entries.map((exp, index) => (
                     <article
                         key={index}
-                        className="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-6"
+                        className="group grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-2 sm:gap-10"
                     >
                         {/* Date Column */}
                         <div className="pt-1">
-                            <p className="text-sm text-muted font-medium whitespace-nowrap">
+                            <p className="text-base text-muted font-medium whitespace-nowrap">
                                 {exp.period}
                             </p>
                             {exp.isCurrent && (
@@ -38,14 +38,14 @@ export default function ExperienceSection({ data }: Props) {
 
                         {/* Content Column */}
                         <div>
-                            <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
+                            <h3 className="text-xl font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
                                 {exp.title}
                             </h3>
-                            <p className="text-sm text-muted mb-3 flex items-center gap-1.5">
+                            <p className="text-base text-muted mb-3 flex items-center gap-1.5">
                                 <span className="text-xs">{exp.icon}</span>
                                 {exp.company}
                             </p>
-                            <p className="text-sm text-muted leading-relaxed mb-4 max-w-lg">
+                            <p className="text-base text-muted leading-relaxed mb-4">
                                 {exp.description}
                             </p>
 
@@ -54,7 +54,7 @@ export default function ExperienceSection({ data }: Props) {
                                 {exp.tags.map((tag) => (
                                     <span
                                         key={tag}
-                                        className="px-3 py-1 text-xs font-mono font-medium text-tag-text bg-tag-bg rounded-full border border-border"
+                                        className="px-3 py-1 text-sm font-mono font-medium text-tag-text bg-tag-bg rounded-full border border-border"
                                     >
                                         {tag}
                                     </span>
