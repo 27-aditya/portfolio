@@ -22,7 +22,7 @@ export default function ExperienceSection({ data }: Props) {
                 {data.entries.map((exp, index) => (
                     <article
                         key={index}
-                        className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-6"
+                        className="group grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2 sm:gap-6"
                     >
                         {/* Date Column */}
                         <div className="pt-1">
@@ -38,7 +38,7 @@ export default function ExperienceSection({ data }: Props) {
 
                         {/* Content Column */}
                         <div>
-                            <h3 className="text-lg font-semibold text-foreground mb-1">
+                            <h3 className="text-lg font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
                                 {exp.title}
                             </h3>
                             <p className="text-sm text-muted mb-3 flex items-center gap-1.5">

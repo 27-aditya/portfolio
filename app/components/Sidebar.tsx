@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Sidebar() {
     return (
-        <aside className="space-y-6">
+        <aside className="space-y-10">
             {/* Profile Card */}
-            <div className="text-center">
+            <div>
                 {/* Profile Photo */}
-                <div className="relative w-48 h-48 mx-auto mb-5 rounded-2xl overflow-hidden">
+                <div className="relative w-48 h-48 mb-5 rounded-2xl overflow-hidden">
                     <Image
                         src="/images/profile.png"
                         alt="Alex Dev"
@@ -17,22 +17,22 @@ export default function Sidebar() {
                 </div>
 
                 {/* Name & Title */}
-                <h1 className="font-serif text-3xl font-bold text-foreground mb-1">
+                <h1 className="font-serif text-5xl font-bold text-foreground mb-1">
                     Alex Dev
                 </h1>
-                <p className="text-sm font-semibold text-accent mb-3">
+                <p className="text-base font-semibold text-accent mb-3">
                     Full Stack Engineer
                 </p>
 
                 {/* Bio */}
-                <p className="text-sm text-muted leading-relaxed max-w-[240px] mx-auto mb-4">
+                <p className="text-base text-muted leading-relaxed max-w-[360px] mb-4">
                     Building digital products with a focus on minimalism and user
                     experience. Currently seeking new adventures in the Grand Line of
                     tech.
                 </p>
 
                 {/* Social Icons */}
-                <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-6">
                     {/* GitHub */}
                     <a
                         href="https://github.com"
@@ -42,7 +42,7 @@ export default function Sidebar() {
                         aria-label="GitHub"
                     >
                         <svg
-                            className="w-5 h-5"
+                            className="w-6 h-6"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                         >
@@ -58,7 +58,7 @@ export default function Sidebar() {
                         aria-label="LinkedIn"
                     >
                         <svg
-                            className="w-5 h-5"
+                            className="w-6 h-6"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                         >
@@ -74,7 +74,7 @@ export default function Sidebar() {
                         aria-label="Twitter"
                     >
                         <svg
-                            className="w-5 h-5"
+                            className="w-6 h-6"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                         >
@@ -85,9 +85,9 @@ export default function Sidebar() {
             </div>
 
             {/* Status Card */}
-            <div className="border border-border rounded-xl p-5 space-y-4">
+            <div className="bg-gray-500/10 rounded-2xl p-5 space-y-4">
                 <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-widest text-muted mb-2">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-muted mb-2">
                         Status
                     </p>
                     <div className="flex items-center gap-2">
@@ -95,7 +95,7 @@ export default function Sidebar() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green"></span>
                         </span>
-                        <span className="text-sm font-medium text-foreground">
+                        <span className="text-base font-medium text-foreground">
                             Open to new bounties
                         </span>
                     </div>
@@ -104,7 +104,7 @@ export default function Sidebar() {
                 {/* Resume Button */}
                 <a
                     href="#"
-                    className="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-accent text-white text-sm font-semibold rounded-lg hover:bg-accent/90 transition-colors"
+                    className="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-accent text-white text-base font-semibold rounded-lg hover:bg-accent/90 transition-colors"
                 >
                     <svg
                         className="w-4 h-4"
@@ -125,7 +125,7 @@ export default function Sidebar() {
                 {/* Contact Button */}
                 <a
                     href="#"
-                    className="flex items-center justify-center w-full py-2.5 px-4 border border-border text-foreground text-sm font-semibold rounded-lg hover:bg-tag-bg transition-colors"
+                    className="flex items-center justify-center w-full py-2.5 px-4 bg-background text-foreground text-base font-semibold rounded-lg hover:bg-tag-bg transition-colors"
                 >
                     Contact Me
                 </a>
