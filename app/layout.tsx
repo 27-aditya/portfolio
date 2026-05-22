@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Aditya Kamble — Full Stack Engineer",
+  title: "Aditya Kamble",
   description:
     "Building digital products with a focus on minimalism and user experience.",
 };

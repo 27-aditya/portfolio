@@ -9,7 +9,7 @@ export default function ExperienceSection({ data }: Props) {
         <section>
             {/* Section Header */}
             <div className="flex items-end justify-between mb-10">
-                <h2 className="font-serif text-5xl lg:text-6xl font-bold italic tracking-tight text-foreground">
+                <h2 className="font-serif text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
                     {data.title}
                 </h2>
                 <span className="text-xs font-mono text-muted tracking-widest uppercase hidden sm:block">
@@ -42,7 +42,6 @@ export default function ExperienceSection({ data }: Props) {
                                 {exp.title}
                             </h3>
                             <p className="text-base text-muted mb-3 flex items-center gap-1.5">
-                                <span className="text-xs">{exp.icon}</span>
                                 {exp.company}
                             </p>
                             <p className="text-base text-muted leading-relaxed mb-4">

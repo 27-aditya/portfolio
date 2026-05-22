@@ -3,31 +3,27 @@ title: Experience
 label: "01 // WORK"
 ---
 
-## Senior Frontend Engineer
-- period: 2021 — Present
-- current: true
-- company: Amazon
-- icon: 🏢
-- tags: React, TypeScript, AWS, Next.js
+## Developer
+- period: Dec 2025
+- company: BeyPark
+- tags: Python, YOLO
 
-Spearheaded the redevelopment of the core customer dashboard, improving load times by 40%. Led a team of 5 engineers to implement a new design system based on React and TypeScript. Collaborated closely with UX designers to refine user flows for millions of daily active users.
+A distributed parking system developed and deployed at the Beypore International Water Festival, works realtime updating the parling slots with very low latency alongside an app for the users and a website for the admin.  
 
 ---
 
-## UI Designer
-- period: 2018 — 2021
-- company: Behance
-- icon: ✏️
-- tags: Figma, Adobe XD, Prototyping
+## Application Intern
+- period: May 2025 - July 2025
+- company: Oracle
+- tags: Java, Oracle VBS, Perl Scripting, Bash Scripting
 
-Designed intuitive interfaces for creative professionals. Conducted user research and A/B testing to validate design decisions. Created high-fidelity prototypes in Figma and worked with developers to ensure pixel-perfect implementation.
+Interned as an application developer intern at Oracle, worked on various internal tooling and Java backend and frontend using Oracle VBS. Learnt how software development works at scale, how to build software that scales and how coding goes on in an organisation. Also maintained Perl scripts and wrote Bash scripts for streamlining the deployment process.  
 
 ---
 
-## Freelance Developer
-- period: 2016 — 2018
-- company: Self-Employed
-- icon: 💼
-- tags: WordPress, HTML/CSS, JavaScript
+## Minerva Team Lead
+- period: Dec 2024 - Jan 2025
+- company: Computer Science & Engineering Department, NITC
+- tags: React, NextJs, Strapi
 
-Delivered custom web solutions for diverse clients ranging from local businesses to tech startups. Managed full project lifecycles from requirement gathering to deployment and maintenance.
+Colead a team of 11 developers for developing the CSE department official website. Helped with frontend and backend development with Strapi as CMS, managing to create a visually pleasing website.

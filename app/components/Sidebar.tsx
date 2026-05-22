@@ -6,10 +6,10 @@ export default function Sidebar() {
             {/* Profile Card */}
             <div>
                 {/* Profile Photo */}
-                <div className="relative w-48 h-48 mb-5 rounded-2xl overflow-hidden">
+                <div className="relative w-32 h-32 lg:w-48 lg:h-48 mb-4 lg:mb-5 rounded-2xl overflow-hidden">
                     <Image
-                        src="/images/profile.png"
-                        alt="Alex Dev"
+                        src="/images/profile.jpeg"
+                        alt="Aditya Dattatray Kamble"
                         fill
                         className="object-cover grayscale"
                         priority
@@ -17,25 +17,23 @@ export default function Sidebar() {
                 </div>
 
                 {/* Name & Title */}
-                <h1 className="font-serif text-5xl font-bold text-foreground mb-1">
-                    Alex Dev
+                <h1 className="font-serif text-4xl lg:text-5xl font-bold text-foreground mb-1">
+                    Aditya Kamble
                 </h1>
-                <p className="text-base font-semibold text-accent mb-3">
-                    Full Stack Engineer
+                <p className="text-sm lg:text-base font-semibold text-accent mb-3">
+                    Guy who codes stuff.
                 </p>
 
                 {/* Bio */}
                 <p className="text-base text-muted leading-relaxed max-w-[360px] mb-4">
-                    Building digital products with a focus on minimalism and user
-                    experience. Currently seeking new adventures in the Grand Line of
-                    tech.
+                    Tinkers around with pretty much anything and everything.
                 </p>
 
                 {/* Social Icons */}
                 <div className="flex items-center gap-4 mb-6">
                     {/* GitHub */}
                     <a
-                        href="https://github.com"
+                        href="https://github.com/27-aditya"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-accent transition-colors"
@@ -51,7 +49,7 @@ export default function Sidebar() {
                     </a>
                     {/* LinkedIn */}
                     <a
-                        href="https://linkedin.com"
+                        href="www.linkedin.com/in/aditya-kamble27"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-accent transition-colors"
@@ -67,7 +65,7 @@ export default function Sidebar() {
                     </a>
                     {/* Twitter / X */}
                     <a
-                        href="https://twitter.com"
+                        href="https://x.com/Null273"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-accent transition-colors"
@@ -96,14 +94,14 @@ export default function Sidebar() {
                             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green"></span>
                         </span>
                         <span className="text-base font-medium text-foreground">
-                            Open to new bounties
+                            Open to new roles
                         </span>
                     </div>
                 </div>
 
                 {/* Resume Button */}
                 <a
-                    href="#"
+                    href="https://drive.google.com/file/d/10ebKCdXDT8IEf_wM9qqvyqUcCotTzTbD/view?usp=sharing"
                     className="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-accent text-white text-base font-semibold rounded-lg hover:bg-accent/90 transition-colors"
                 >
                     <svg
@@ -124,29 +122,11 @@ export default function Sidebar() {
 
                 {/* Contact Button */}
                 <a
-                    href="#"
+                    href="mailto:kambleaditya946@gmail.com"
                     className="flex items-center justify-center w-full py-2.5 px-4 bg-background text-foreground text-base font-semibold rounded-lg hover:bg-tag-bg transition-colors"
                 >
                     Contact Me
                 </a>
-            </div>
-
-            {/* Map */}
-            <div className="relative rounded-xl overflow-hidden border border-border">
-                <div className="aspect-[16/10] relative">
-                    <Image
-                        src="/images/map.png"
-                        alt="Based in Grand Line"
-                        fill
-                        className="object-cover"
-                    />
-                    {/* Label overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                        <p className="text-xs font-mono text-white/90 tracking-wide">
-                            Based in Grand Line
-                        </p>
-                    </div>
-                </div>
             </div>
         </aside>
     );

@@ -29,7 +29,7 @@ export default function ProjectsSection({ data }: Props) {
         <section>
             {/* Section Header */}
             <div className="flex items-end justify-between mb-10">
-                <h2 className="font-serif text-5xl lg:text-6xl font-bold italic tracking-tight text-foreground">
+                <h2 className="font-serif text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
                     {data.title}
                 </h2>
                 <span className="text-xs font-mono text-muted tracking-widest uppercase hidden sm:block">
@@ -52,12 +52,20 @@ export default function ProjectsSection({ data }: Props) {
                                 onClick={() => setExpandedIndex(isExpanded ? null : index)}
                             >
                                 <div className="flex-1">
-                                    <h3 className="text-xl font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
-                                        {project.title}
-                                    </h3>
+                                    <a href={project.href} target="_blank" rel="noopener noreferrer">
+                                        <h3 className="text-xl font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">
+                                            {project.title}
+                                        </h3>
+                                        {project.isFun && (
+                                        <span className="inline-block px-2.5 text-[10px] font-semibold uppercase tracking-wider text-accent border border-accent rounded-full">
+                                            Fun
+                                        </span>
+                                    )}
+                                    </a>
                                     <p className="text-sm font-mono text-muted mb-3">
                                         {project.tech}
                                     </p>
+
                                     <p className="text-base text-muted leading-relaxed">
                                         {project.description}
                                     </p>

@@ -14,7 +14,7 @@ export default function BlogSection({ data }: Props) {
         <section>
             {/* Section Header */}
             <div className="flex items-end justify-between mb-10">
-                <h2 className="font-serif text-5xl lg:text-6xl font-bold italic tracking-tight text-foreground">
+                <h2 className="font-serif text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
                     {data.title}
                 </h2>
                 <span className="text-xs font-mono text-muted tracking-widest uppercase hidden sm:block">

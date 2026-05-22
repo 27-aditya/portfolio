@@ -20,6 +20,7 @@ export interface ProjectEntry {
     images: string[];
     href: string;
     description: string;
+    isFun: boolean;
 }
 
 export interface BlogEntry {
@@ -103,6 +104,7 @@ export function getProjects(): SectionData<ProjectEntry> {
         images: entry.metadataArrays.image || [],
         href: entry.metadata.href || "#",
         description: entry.description,
+        isFun: entry.metadata.fun === "true",
     }));
 
     return {

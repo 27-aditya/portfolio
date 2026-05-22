@@ -28,6 +28,7 @@ interface Props {
 
 export default function PageContent({ experience, projects, blog }: Props) {
     const [activeTab, setActiveTab] = useState<TabKey>("experience");
+    const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
 
     return (
         <div className="flex flex-col h-screen">
@@ -41,7 +42,7 @@ export default function PageContent({ experience, projects, blog }: Props) {
                         AK.
                     </a>
 
-                    <div className="flex items-center gap-8">
+                    <div className="flex items-center gap-5 md:gap-8">
                         {tabs.map((tab) => (
                             <button
                                 key={tab.key}
@@ -58,11 +59,38 @@ export default function PageContent({ experience, projects, blog }: Props) {
                 </nav>
             </header>
 
-            {/* Body: 60-40 split, each independently scrollable, no visible scrollbars */}
-            <div className="flex flex-1 overflow-hidden">
-                {/* Left Column — 60% */}
-                <main className="w-[65%] overflow-y-auto no-scrollbar pl-8 pr-4 lg:pl-14 lg:pr-6 xl:pl-20 xl:pr-8 py-5 lg:py-7">
-                    <div className="max-w-4xl">
+            {/* Body: Responsive layout */}
+            <div className="flex flex-col lg:flex-row flex-1 overflow-hidden">
+                {/* Main Content */}
+                <main className="w-full lg:w-[65%] overflow-y-auto no-scrollbar px-6 lg:pl-14 lg:pr-6 xl:pl-20 xl:pr-8 py-5 lg:py-7">
+                    <div className="max-w-4xl mx-auto lg:mx-0">
+                        {/* Mobile Collapsible Sidebar */}
+                        <div className="block lg:hidden mb-8">
+                            <button
+                                onClick={() => setIsMobileSidebarOpen(!isMobileSidebarOpen)}
+                                className="w-full flex items-center justify-between p-4 bg-gray-500/5 rounded-2xl border border-border text-foreground hover:bg-gray-500/10 transition-colors"
+                            >
+                                <span className="font-semibold text-sm">
+                                    {isMobileSidebarOpen ? "Hide Profile" : "View Profile"}
+                                </span>
+                                <svg
+                                    className={`w-5 h-5 transition-transform ${isMobileSidebarOpen ? "rotate-180" : ""}`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            
+                            {isMobileSidebarOpen && (
+                                <div className="mt-6">
+                                    <Sidebar />
+                                </div>
+                            )}
+                        </div>
+
                         {activeTab === "experience" && (
                             <ExperienceSection data={experience} />
                         )}
@@ -71,8 +99,8 @@ export default function PageContent({ experience, projects, blog }: Props) {
                     </div>
                 </main>
 
-                {/* Right Column — 40%, independent scroll */}
-                <aside className="hidden lg:block w-[30%] shrink-0 overflow-y-auto no-scrollbar px-8 py-10">
+                {/* Desktop Sidebar Column */}
+                <aside className="hidden lg:block lg:w-[35%] shrink-0 overflow-y-auto no-scrollbar px-8 py-10">
                     <Sidebar />
                 </aside>
             </div>
