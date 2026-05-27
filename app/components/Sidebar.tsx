@@ -49,7 +49,7 @@ export default function Sidebar() {
                     </a>
                     {/* LinkedIn */}
                     <a
-                        href="www.linkedin.com/in/aditya-kamble27"
+                        href="https://www.linkedin.com/in/aditya-kamble27"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-accent transition-colors"
@@ -101,7 +101,7 @@ export default function Sidebar() {
 
                 {/* Resume Button */}
                 <a
-                    href="https://drive.google.com/file/d/1gq18bp8sm1Tll27bgTJ3Zza8a9Cl_0lF/view?usp=drive_link"
+                    href="/resume.pdf"
                     className="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-accent text-white text-base font-semibold rounded-lg hover:bg-accent/90 transition-colors"
                 >
                     <svg
