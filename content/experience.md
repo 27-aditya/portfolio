@@ -3,12 +3,14 @@ title: Experience
 label: "01 // WORK"
 ---
 
-## Developer
-- period: Dec 2025
-- company: BeyPark
-- tags: Python, YOLO
+## Research Intern
+- period: Aug 2025 - Jan 2026
+- company: Kerala State Police – Kozhikode District
+- tags: Distributed Systems, ANPR, Prometheus, Graffana
 
-A distributed parking system developed and deployed at the Beypore International Water Festival, works realtime updating the parling slots with very low latency alongside an app for the users and a website for the admin.  
+Collaborated with traffic police to collect and curate real-world datasets from city camera feeds, enabling model training for
+ANPR, violation detection, and vehicle logo detection. Led on-site pilots to deploy and validate Sentinel across multiple locations, iterating on edge configs, dashboards, and inference
+reliability under live traffic conditions.  
 
 ---
 
